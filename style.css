@@ -1,0 +1,22 @@
+/* common styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+html{
+    font-size: 62.5%;
+}
+/* end of common styles */
+
+/* section-1 */
+.section-1{
+    width: 100%;
+    height: 100%;
+}
+/* end-of-section-1 */
