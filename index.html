@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +19,10 @@
       href="https://fonts.cdnfonts.com/css/made-soulmaze"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
   </head>
   <body>
     <!-- navbar -->
@@ -95,8 +98,11 @@
       <section class="section-3">
         <h1 class="section-heading-pricing">Pricing</h1>
         <div class="section-heading-line-pricing"></div>
-        <div class="pricing-cards-wrapper">
-          <div class="pricing-card">
+        <div class="swiper-container">
+        <div class="pricing-cards-wrapper swiper-wrapper">
+
+
+          <div class="pricing-card swiper-slide">
             <div class="pricing-card-front">
               <h1 class="pricing-card-heading heading-free">FREE</h1>
               <h3 class="pricing-card-price">£0</h3>
@@ -128,13 +134,13 @@
               </ul>
               <button class="pricing-card-btn btn-free">Choose Plan</button>
             </div>
-            <div class="pricing-card-back back-free">
+            <div class="pricing-card-back back-free ">
               <a href="#">order now</a>
             </div>
           </div>
 
 
-          <div class="pricing-card">
+          <div class="pricing-card swiper-slide">
             <div class="pricing-card-front">
               <h1 class="pricing-card-heading heading-basic">BASIC</h1>
               <h3 class="pricing-card-price">£299</h3>
@@ -172,7 +178,7 @@
           </div>
 
 
-          <div class="pricing-card">
+          <div class="pricing-card swiper-slide">
             <div class="pricing-card-front">
               <h1 class="pricing-card-heading heading-standard">STANDARD</h1>
               <h3 class="pricing-card-price">£699</h3>
@@ -210,7 +216,7 @@
           </div>
 
 
-          <div class="pricing-card">
+          <div class="pricing-card swiper-slide">
             <div class="pricing-card-front">
               <h1 class="pricing-card-heading heading-premium">PREMIUM</h1>
               <h3 class="pricing-card-price">£999</h3>
@@ -257,11 +263,50 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       <!-- end of section 3 -->
-    </div>
 
+      <!-- section 4 -->
+      <section class="section-4">
+      <div class="section-heading">Contact</div>
+      <div class="section-heading-line"></div>
+      <div class="contact-wrapper">
+        <div class="contact-details">
+            <div class="phone">
+                <i class="fas fa-mobile"></i>
+                <h3>Phone</h3>
+                <p>+234 786 564</p>
+                <p>+234 786 564</p>
+            </div>
+            <div class="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Address</h3>
+                <p>Main Street #123</p>
+                <p>Main Street #123</p>
+            </div>
+            <div class="email">
+                <i class="far fa-envelope"></i>
+                <h3>Email</h3>
+                <p>support@gmail.com</p>
+                <p>sales@gmail.com</p>
+            </div>
+        </div>
+        <h1>Get in Touch</h1>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="email">
+            <textarea placeholder="your message"></textarea>
+            <input type="submit" value="send message">
+        </form>
+      </div>
+
+      </section>
+      <!-- end of section 4 -->
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
